@@ -1,0 +1,13 @@
+{
+  "name": "expanse-ui",
+  "title": "Expanse UI",
+  "description": "An updated the Expanse flavored UI for FVTT. Based on sci-fi ui.",
+  "version": "0.0.1",
+  "author": "dellatosa",
+  "scripts": [ "expanseui.js" ],
+  "styles": [ "expanseui.css" ],
+  "esmodules": [],
+  "packs": [],
+  "minimumCoreVersion": "0.7.9",
+  "compatibleCoreVersion": "0.8.8"
+}
