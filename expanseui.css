@@ -40,12 +40,6 @@
     box-shadow: -5 -5 25px inset #008cff;
 }
 
-#chat-log {
-    border: 10px solid transparent;
-    border-image-source: url("/modules/expanse-ui/ui/img/chat-panel.png");
-    border-image-slice: 16 fill;
-}
-
 #sidebar-tabs{
     text-align: center;
 }
@@ -56,7 +50,6 @@
 
 i.fa-caret-right::before{
     content: "";
-
 }
 
 .fa-caret-right{
@@ -89,15 +82,7 @@ i.fa-caret-left::before{
     vertical-align: top;
 }
 
-#sidebar #sidebar-tabs i.fa-comments {
-    content: "";
-    background-image: url("/modules/expanse-ui/ui/img/speechbubble.png") !important;
-    width: 50px !important;
-    height: 50px !important;
-    display: inline-block !important;
-    background-position:center !important;
-    background-size:cover !important;
-}
+
 #sidebar-tabs {
     flex: 0 0 32px;
     box-sizing: border-box;
@@ -108,7 +93,6 @@ i.fa-caret-left::before{
 #sidebar-tabs > .item {
     line-height: 0px;
     height: 55px;
-    
 }
 #sidebar-tabs > .item.active {
     color: #FFF;
@@ -119,6 +103,16 @@ i.fa-caret-left::before{
 #sidebar.collapsed #sidebar-tabs > .item.active {
     border-bottom: 1px solid rgb(0, 110, 255);
     border-radius: 5px;
+}
+
+#sidebar #sidebar-tabs i.fa-comments {
+    content: "";
+    background-image: url("/modules/expanse-ui/ui/img/speechbubble.png") !important;
+    width: 50px !important;
+    height: 50px !important;
+    display: inline-block !important;
+    background-position:center !important;
+    background-size:cover !important;
 }
 
 #sidebar #sidebar-tabs i.fa-comments::before {
@@ -258,7 +252,6 @@ i.fa-caret-left::before{
     background-image: url("/modules/expanse-ui/ui/img/chat-message-back.png");
     /*border: 2px solid rgb(0, 150, 255);*/
     border: 2px solid rgb(2, 114, 217);
-    /* color: rgb(2, 114, 217); */
     color: white;
 }
 .message-sender {
@@ -307,6 +300,7 @@ textarea:focus {
     color: #520000;
     margin-top: -10px;
 }
+
 .roll-type-select{
     /*color: rgb(98, 158, 214);*/
     color: rgb(0, 110, 255);
@@ -464,21 +458,34 @@ textarea:focus {
 /* differentiate public roll from private or blind.
  Private uses class whisper, blind uses class blind AND whisper, Self Roll
  uses class whisper (identical to Private Roll for CSS) */
-#chat-log .message.whisper {
+#chat-log {
+    border: 10px solid transparent;
+    border-image-source: url("/modules/expanse-ui/ui/img/chat-panel.png");
+    border-image-slice: 16 fill;
+}
 
+#chat-log .message.whisper {
     font-style: italic;
+    background-size: 100% 100% !important;
+    background-image: url("/modules/expanse-ui/ui/img/chat-message-back.png");
 }
 
 #chat-log .message.whisper .message-header .message-metadata::before{
-    color: #585858;
-    content: " (Private Roll) ";
+    color: white;
+    content: " (Jet privé) ";
     float: left;
 }
 
-
 #chat-log .message.blind .message-header .message-metadata::before{
-    color: #585858;
-    content: " (Blind Roll) " !important;
+    color: white;
+    content: " (Jet en aveugle) " !important;
     float: left;
 }
 /* #endregion */
+
+::-webkit-scrollbar-thumb {
+    outline: none;
+    border-radius: 3px;
+    background: rgb(3, 72, 98);
+    border: 1px solid rgb(2, 114, 217);
+}
