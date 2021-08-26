@@ -400,7 +400,7 @@ textarea:focus {
 
 /* #region Folders as buttons */
 .sidebar-tab .folder .folder-header {
-    background-image: url(/modules/expanse-ui/ui/img/Button_Normal.png)  !important;
+    background-image: url(/modules/expanse-ui/ui/img/button_normal.png)  !important;
     text-align: left !important;
     background-position: bottom !important;
     background-size: 100% 80%!important;
@@ -496,7 +496,7 @@ textarea:focus {
  */
 
 .colorset-selection .action-details.colorset-first-tier, .colorset-selection .roll-mod.stunted {
-    background-image: url(/modules/expanse-ui/ui/img/Button_top.png)  !important;
+    background-image: url(/modules/expanse-ui/ui/img/button_top.png)  !important;
     background-position: center !important;
     background-size: 100% 100% !important;
     background-repeat: no-repeat;
