@@ -273,7 +273,7 @@ i.fa-caret-left::before{
     background-size: 100% 100% !important;
     padding-left: 5px;
     padding-top: 7px;
-    background-image: url(./ui/img/chat-win-back.png) !important;
+    background-image: url("./ui/img/chat-win-back.png") !important;
 }
 
 .chat-message .message-timestamp, .chat-message i {
@@ -293,7 +293,7 @@ textarea:focus {
     height: 24px;
     top: 7px;
     padding-top: 0px;
-    background: url(./ui/img/chat-win-back.png) repeat !important;
+    background: url("./ui/img/chat-win-back.png") repeat !important;
     background-position-x: 0%;
     background-position-y: 0%;
     background-position: initial;
@@ -320,12 +320,12 @@ textarea:focus {
     top: 7px;
     padding-top: 3px;
     background: white;
-    /*background: url(./ui/img/chat-message-back.png) repeat;*/
+    /*background: url("./ui/img/chat-message-back.png") repeat;*/
     background-position-x: 0%;
     background-position-y: 0%;
     background-position: initial;
     box-shadow: inset 0 0 10px #0272d9;
-    /*border-image: url(./ui/img/chat-controls-border.png) 4 repeat;
+    /*border-image: url("./ui/img/chat-controls-border.png") 4 repeat;
     border-image-width: 4px;
     border-image-outset: 3px 2px 2px 2px;*/
     color: #013877;
@@ -350,12 +350,12 @@ textarea:focus {
     top: 7px;
     padding-top: 3px;
     background: white;
-    /*background: url(./ui/img/chat-message-back.png) repeat;*/
+    /*background: url("./ui/img/chat-message-back.png") repeat;*/
     background-position-x: 0%;
     background-position-y: 0%;
     background-position: initial;
     box-shadow: inset 0 0 10px #0272d9;
-    /*border-image: url(./ui/img/chat-controls-border.png) 4 repeat;
+    /*border-image: url("./ui/img/chat-controls-border.png") 4 repeat;
     border-image-width: 4px;
     border-image-outset: 3px 2px 2px 2px;*/
     color: #013877;
@@ -369,7 +369,7 @@ textarea:focus {
 }
 
 .sidebar-tab .directory-header button, #settings button {
-    background-image: url(./ui/img/button_top.png);
+    background-image: url("./ui/img/button_top.png");
     text-align: center;
     background-position: center !important;
     background-size: 100% 100% !important;
@@ -381,7 +381,7 @@ textarea:focus {
 }
 
 .sidebar-tab .directory-footer button {
-    background-image: url(./ui/img/button_bottom.png);
+    background-image: url("./ui/img/button_bottom.png");
     text-align: center;
     background-position: center !important;
     background-size: 100% 100% !important;
@@ -400,7 +400,7 @@ textarea:focus {
 
 /* #region Folders as buttons */
 .sidebar-tab .folder .folder-header {
-    background-image: url(./ui/img/button_normal.png)  !important;
+    background-image: url("./ui/img/button_normal.png")  !important;
     text-align: left !important;
     background-position: bottom !important;
     background-size: 100% 80%!important;
@@ -435,7 +435,7 @@ textarea:focus {
     top: 7px;
     padding-top: 17px;
     padding-left: 35px;
-    background: url(./ui/img/button_compedium.png) no-repeat;
+    background: url("./ui/img/button_compedium.png") no-repeat;
     background-position-x: 0%;
     background-size: 100% 100%;
     background-position-y: 0%;
@@ -496,7 +496,7 @@ textarea:focus {
  */
 
 .colorset-selection .action-details.colorset-first-tier, .colorset-selection .roll-mod.stunted {
-    background-image: url(./ui/img/button_top.png)  !important;
+    background-image: url("./ui/img/button_top.png")  !important;
     background-position: center !important;
     background-size: 100% 100% !important;
     background-repeat: no-repeat;
