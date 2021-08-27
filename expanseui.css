@@ -27,7 +27,7 @@ body *:not(i) {
     border: 10px solid transparent;
     box-sizing: border-box;
     box-shadow: -30 -30 25px outset #008cff;
-    background: url("/modules/expanse-ui/ui/img/denim075.png") repeat;
+    background: url("./ui/img/denim075.png") repeat;
 }
 
 .collapse::before{
@@ -60,7 +60,7 @@ i.fa-caret-right::before{
 }
 
 .fa-caret-right{
-    background-image: url("/modules/expanse-ui/ui/img/right_arrow.png");
+    background-image: url("./ui/img/right_arrow.png");
     width: 30px;
     height: 30px;
     display: inline-block !important;
@@ -76,7 +76,7 @@ i.fa-caret-left::before{
 }
 
 .fa-caret-left{
-    background-image: url("/modules/expanse-ui/ui/img/left_arrow.png") !important;
+    background-image: url("./ui/img/left_arrow.png") !important;
     width: 30px;
     height: 30px;
     display: inline-block !important;
@@ -113,7 +113,7 @@ i.fa-caret-left::before{
 
 #sidebar #sidebar-tabs i.fa-comments {
     content: "";
-    background-image: url("/modules/expanse-ui/ui/img/speechbubble.png") !important;
+    background-image: url("./ui/img/speechbubble.png") !important;
     width: 50px !important;
     height: 50px !important;
     display: inline-block !important;
@@ -127,7 +127,7 @@ i.fa-caret-left::before{
 
 #sidebar #sidebar-tabs i.fa-fist-raised {
     content: "";
-    background-image: url("/modules/expanse-ui/ui/img/combat.png") !important;
+    background-image: url("./ui/img/combat.png") !important;
     width: 50px !important;
     height: 50px !important;
     display: inline-block !important;
@@ -141,7 +141,7 @@ i.fa-caret-left::before{
 
 #sidebar #sidebar-tabs i.fa-map {
     content: "";
-    background-image: url("/modules/expanse-ui/ui/img/scenes.png") !important;
+    background-image: url("./ui/img/scenes.png") !important;
     width: 50px !important;
     height: 50px !important;
     display: inline-block !important;
@@ -155,7 +155,7 @@ i.fa-caret-left::before{
 
 #sidebar #sidebar-tabs i.fa-users {
     content: "";
-    background-image: url("/modules/expanse-ui/ui/img/actors.png") !important;
+    background-image: url("./ui/img/actors.png") !important;
     width: 50px !important;
     height: 50px !important;
     display: inline-block !important;
@@ -169,7 +169,7 @@ i.fa-caret-left::before{
 
 #sidebar #sidebar-tabs i.fa-suitcase {
     content: "";
-    background-image: url("/modules/expanse-ui/ui/img/items.png") !important;
+    background-image: url("./ui/img/items.png") !important;
     width: 50px !important;
     height: 50px !important;
     display: inline-block !important;
@@ -183,7 +183,7 @@ i.fa-caret-left::before{
 
 #sidebar #sidebar-tabs i.fa-book-open {
     content: "";
-    background-image: url("/modules/expanse-ui/ui/img/journals.png") !important;
+    background-image: url("./ui/img/journals.png") !important;
     width: 50px !important;
     height: 50px !important;
     display: inline-block !important;
@@ -197,7 +197,7 @@ i.fa-caret-left::before{
 
 #sidebar #sidebar-tabs i.fa-th-list {
     content: "";
-    background-image: url("/modules/expanse-ui/ui/img/tables.png") !important;
+    background-image: url("./ui/img/tables.png") !important;
     width: 50px !important;
     height: 50px !important;
     display: inline-block !important;
@@ -211,7 +211,7 @@ i.fa-caret-left::before{
 
 #sidebar #sidebar-tabs i.fa-music {
     content: "";
-    background-image: url("/modules/expanse-ui/ui/img/music.png") !important;
+    background-image: url("./ui/img/music.png") !important;
     width: 50px !important;
     height: 50px !important;
     display: inline-block !important;
@@ -225,7 +225,7 @@ i.fa-caret-left::before{
 
 #sidebar #sidebar-tabs i.fa-atlas {
     content: "";
-    background-image: url("/modules/expanse-ui/ui/img/compendiums.png") !important;
+    background-image: url("./ui/img/compendiums.png") !important;
     width: 50px !important;
     height: 50px !important;
     display: inline-block !important;
@@ -239,7 +239,7 @@ i.fa-caret-left::before{
 
 #sidebar #sidebar-tabs i.fa-cogs {
     content: "";
-    background-image: url("/modules/expanse-ui/ui/img/settings.png") !important;
+    background-image: url("./ui/img/settings.png") !important;
     width: 50px !important;
     height: 50px !important;
     display: inline-block !important;
@@ -256,7 +256,7 @@ i.fa-caret-left::before{
 /* #region Chat Tab */
 .message{
     background-size: 100% 100% !important;
-    background-image: url("/modules/expanse-ui/ui/img/chat-message-back.png");
+    background-image: url("./ui/img/chat-message-back.png");
     border: 2px solid #0272d9;
     color: white;
 }
@@ -273,7 +273,7 @@ i.fa-caret-left::before{
     background-size: 100% 100% !important;
     padding-left: 5px;
     padding-top: 7px;
-    background-image: url(/modules/expanse-ui/ui/img/chat-win-back.png) !important;
+    background-image: url(./ui/img/chat-win-back.png) !important;
 }
 
 .chat-message .message-timestamp, .chat-message i {
@@ -293,7 +293,7 @@ textarea:focus {
     height: 24px;
     top: 7px;
     padding-top: 0px;
-    background: url(/modules/expanse-ui/ui/img/chat-win-back.png) repeat !important;
+    background: url(./ui/img/chat-win-back.png) repeat !important;
     background-position-x: 0%;
     background-position-y: 0%;
     background-position: initial;
@@ -320,12 +320,12 @@ textarea:focus {
     top: 7px;
     padding-top: 3px;
     background: white;
-    /*background: url(/modules/expanse-ui/ui/img/chat-message-back.png) repeat;*/
+    /*background: url(./ui/img/chat-message-back.png) repeat;*/
     background-position-x: 0%;
     background-position-y: 0%;
     background-position: initial;
     box-shadow: inset 0 0 10px #0272d9;
-    /*border-image: url(/modules/expanse-ui/ui/img/chat-controls-border.png) 4 repeat;
+    /*border-image: url(./ui/img/chat-controls-border.png) 4 repeat;
     border-image-width: 4px;
     border-image-outset: 3px 2px 2px 2px;*/
     color: #013877;
@@ -333,7 +333,7 @@ textarea:focus {
 
 /* TODO - Boutons commencer et terminer le combat */
 /* #combat-controls .combat-control{
-    background-image: url(/modules/expanse-ui/ui/img/TO_DEFINE.png);
+    background-image: url(./ui/img/TO_DEFINE.png);
     text-align: center;
     background-position: center !important;
     background-size: 260px 100%!important;
@@ -350,12 +350,12 @@ textarea:focus {
     top: 7px;
     padding-top: 3px;
     background: white;
-    /*background: url(/modules/expanse-ui/ui/img/chat-message-back.png) repeat;*/
+    /*background: url(./ui/img/chat-message-back.png) repeat;*/
     background-position-x: 0%;
     background-position-y: 0%;
     background-position: initial;
     box-shadow: inset 0 0 10px #0272d9;
-    /*border-image: url(/modules/expanse-ui/ui/img/chat-controls-border.png) 4 repeat;
+    /*border-image: url(./ui/img/chat-controls-border.png) 4 repeat;
     border-image-width: 4px;
     border-image-outset: 3px 2px 2px 2px;*/
     color: #013877;
@@ -369,7 +369,7 @@ textarea:focus {
 }
 
 .sidebar-tab .directory-header button, #settings button {
-    background-image: url(/modules/expanse-ui/ui/img/button_top.png);
+    background-image: url(./ui/img/button_top.png);
     text-align: center;
     background-position: center !important;
     background-size: 100% 100% !important;
@@ -381,7 +381,7 @@ textarea:focus {
 }
 
 .sidebar-tab .directory-footer button {
-    background-image: url(/modules/expanse-ui/ui/img/button_bottom.png);
+    background-image: url(./ui/img/button_bottom.png);
     text-align: center;
     background-position: center !important;
     background-size: 100% 100% !important;
@@ -400,7 +400,7 @@ textarea:focus {
 
 /* #region Folders as buttons */
 .sidebar-tab .folder .folder-header {
-    background-image: url(/modules/expanse-ui/ui/img/button_normal.png)  !important;
+    background-image: url(./ui/img/button_normal.png)  !important;
     text-align: left !important;
     background-position: bottom !important;
     background-size: 100% 80%!important;
@@ -435,7 +435,7 @@ textarea:focus {
     top: 7px;
     padding-top: 17px;
     padding-left: 35px;
-    background: url(/modules/expanse-ui/ui/img/button_compedium.png) no-repeat;
+    background: url(./ui/img/button_compedium.png) no-repeat;
     background-position-x: 0%;
     background-size: 100% 100%;
     background-position-y: 0%;
@@ -468,14 +468,14 @@ textarea:focus {
  uses class whisper (identical to Private Roll for CSS) */
 #chat-log {
     border: 10px solid transparent;
-    border-image-source: url("/modules/expanse-ui/ui/img/chat-panel.png");
+    border-image-source: url("./ui/img/chat-panel.png");
     border-image-slice: 16 fill;
 }
 
 #chat-log .message.whisper {
     font-style: italic;
     background-size: 100% 100% !important;
-    background-image: url("/modules/expanse-ui/ui/img/chat-message-back.png");
+    background-image: url("./ui/img/chat-message-back.png");
 }
 
 #chat-log .message.whisper .message-header .message-metadata::before {
@@ -496,7 +496,7 @@ textarea:focus {
  */
 
 .colorset-selection .action-details.colorset-first-tier, .colorset-selection .roll-mod.stunted {
-    background-image: url(/modules/expanse-ui/ui/img/button_top.png)  !important;
+    background-image: url(./ui/img/button_top.png)  !important;
     background-position: center !important;
     background-size: 100% 100% !important;
     background-repeat: no-repeat;
