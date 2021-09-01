@@ -2,7 +2,7 @@
   "name": "expanse-ui",
   "title": "Expanse UI",
   "description": "An updated the Expanse flavored UI for FVTT. Based on sci-fi ui.",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": "dellatosa",
   "scripts": [ "expanseui.js" ],
   "styles": [ "expanseui.css" ],
@@ -12,5 +12,5 @@
   "compatibleCoreVersion": "0.8.9",
   "url": "https://github.com/Dellatosa/expanse-ui",
   "manifest": "https://raw.githubusercontent.com/Dellatosa/expanse-ui/main/module.json",
-  "download": "https://github.com/Dellatosa/expanse-ui/archive/refs/tags/v0.0.1.zip"
+  "download": "https://github.com/Dellatosa/expanse-ui/archive/refs/tags/v0.0.2.zip"
 }
