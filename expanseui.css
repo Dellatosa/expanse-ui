@@ -567,6 +567,9 @@ textarea:focus {
     border-left: 2px solid #585858 !important;
 }
 
+.directory .directory-list .directory-item.context, .directory .directory-list .directory-item.active {
+    border-color: #008cff;
+}
 /* #endregion */
 
 /* #region Compendium headers */
