@@ -11,13 +11,65 @@ body *:not(i) {
 }
 /* #endregion */
 
+/* #region hud */
+#controls .scene-control.active, #controls .control-tool.active, #controls .scene-control:hover, #controls .control-tool:hover {
+    color: #FFF;
+    border: 1px solid #006eef;
+    border-bottom: 1px solid #008cff;
+    box-shadow: 0 0 10px #008cff;
+}
+
+#navigation #scene-list .scene.view, #navigation #scene-list .scene.context {
+    cursor: default;
+    color: #FFF;
+    border: 1px solid #006eef;
+    background: rgba(52, 52, 52, 0.95);
+    border-bottom: 1px solid #008cff;
+    box-shadow: 0 0 10px #008cff;
+}
+
+#navigation #scene-list .scene li.scene-player {
+    background-color: #008cff !important;
+}
+
+#logo {
+    content: url("./ui/img/the-expanse-logo.png");
+}
+
+#pause {
+    background: url("./ui/img/pause-back.png") no-repeat 50% 50%; 
+}
+
+.paused img {
+    content: url("./ui/img/pause.png");
+}
+
+#players ol .player.context {
+    border-top: 1px solid #008cff;
+    border-bottom: 1px solid #008cff;
+}
+
+#players ol .player.context .player-name {
+    text-shadow: 0 0 5px #008cff;
+}
+
+#hotbar .macro:hover {
+    box-shadow: inset 0 0 6px #008cff; 
+}
+
+#hotbar .macro.active:hover {
+    /*box-shadow: inset 0 0 6px #008cff;*/
+    border: solid 1px #008cff;
+}
+/* #endregion */
+
 /* #region Dialog */
 .window-app .window-header {
     background: #05172ace;
     color: white;
 }
 
-.window-app:not(.sheet) .window-content {
+.window-app:not(.char, .item) .window-content {
     background: url("./ui/img/dialog-back.png");
     background-size: 100% 100% !important;
     color: white;
@@ -30,6 +82,17 @@ body *:not(i) {
 .window-app .window-content #module-list .package-title {
     color: white;
     height: auto;
+}
+
+.filepicker .display-modes a {
+    border: 1px solid #7a7971;
+    background: none; 
+}
+
+.filepicker .display-modes a.active {
+    text-shadow: 0 0 6px #008cff;
+    border: 1px solid #191813;
+    background: #6aa1d4;
 }
 
 .window-app .window-content button:not(.tox-tbtn)  {
@@ -60,21 +123,21 @@ body *:not(i) {
     box-shadow: inset 0 0 10px #0272d9;
 }
 
-.window-app:not(.sheet) .window-content input[type="text"], .window-app:not(.sheet) .window-content input[type="date"], 
-.window-app:not(.sheet) .window-content input[type="time"], .window-app:not(.sheet) .window-content input[type="number"],
-.window-app:not(.sheet) .window-content select {
+.window-app:not(.char, .item) .window-content input[type="text"], .window-app:not(.char, .item) .window-content input[type="date"], 
+.window-app:not(.char, .item) .window-content input[type="time"], .window-app:not(.char, .item) .window-content input[type="number"],
+.window-app:not(.char, .item) .window-content textarea, .window-app:not(.char, .item) .window-content select {
     background: white;
     box-shadow: inset 0 0 6px #0272d9;
     color: #013877;
 }
 
-.window-app:not(.sheet) .window-content input[type=checkbox] {
+.window-app:not(.char, .item) .window-content input[type=checkbox] {
     content: url("./ui/img/switch_off.png");
     width:60px;
     height:24px;
 }
 
-.window-app:not(.sheet) .window-content input[type=checkbox]:checked {
+.window-app:not(.char, .item) .window-content input[type=checkbox]:checked {
     content: url("./ui/img/switch_on.png");
     filter: none;
     -webkit-filter: none;
