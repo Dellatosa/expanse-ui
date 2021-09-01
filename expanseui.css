@@ -79,6 +79,10 @@ body *:not(i) {
     color: #6aa1d4;
 }
 
+.window-app .window-content h3 {
+    color: white;
+}
+
 .window-app .window-content #module-list .package-title {
     color: white;
     height: auto;
