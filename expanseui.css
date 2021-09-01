@@ -17,7 +17,7 @@ body *:not(i) {
     color: white;
 }
 
-.window-app .window-content {
+.window-app:not(.sheet) .window-content {
     background: url("./ui/img/dialog-back.png");
     background-size: 100% 100% !important;
     color: white;
@@ -29,9 +29,10 @@ body *:not(i) {
 
 .window-app .window-content #module-list .package-title {
     color: white;
+    height: auto;
 }
 
-.window-app .window-content button  {
+.window-app .window-content button:not(.tox-tbtn)  {
     background-image: url("./ui/img/button_top.png");
     text-align: center;
     background-position: center !important;
@@ -59,10 +60,26 @@ body *:not(i) {
     box-shadow: inset 0 0 10px #0272d9;
 }
 
-.window-app:not(.sheet) .window-content input, .window-app:not(.sheet) .window-content select {
+.window-app:not(.sheet) .window-content input[type="text"], .window-app:not(.sheet) .window-content input[type="date"], 
+.window-app:not(.sheet) .window-content input[type="time"], .window-app:not(.sheet) .window-content input[type="number"],
+.window-app:not(.sheet) .window-content select {
     background: white;
     box-shadow: inset 0 0 6px #0272d9;
     color: #013877;
+}
+
+.window-app:not(.sheet) .window-content input[type=checkbox] {
+    content: url("./ui/img/switch_off.png");
+    width:60px;
+    height:24px;
+}
+
+.window-app:not(.sheet) .window-content input[type=checkbox]:checked {
+    content: url("./ui/img/switch_on.png");
+    filter: none;
+    -webkit-filter: none;
+    width:60px;
+    height:24px;
 }
 
 /* #endregion */
@@ -310,12 +327,17 @@ i.fa-caret-left::before{
 
 
 /* #region Chat Tab */
-.message{
+.message {
     background-size: 100% 100% !important;
     background-image: url("./ui/img/chat-message-back.png");
     border: 2px solid #0272d9;
     color: white;
 }
+
+.message .editor-content {
+    color: #013877;
+}
+
 .message-sender {
     color: white;
     font-weight: bold;
@@ -448,7 +470,8 @@ textarea:focus {
     text-shadow: 2px 2px black;
 }
 
-.sidebar-tab .directory-header button:hover, .sidebar-tab .directory-footer button:hover, #settings button:hover,#settings button:focus {
+.sidebar-tab .directory-header button:hover, .sidebar-tab .directory-footer button:hover, 
+#settings button:hover, #settings button:focus {
     box-shadow: inset 0 0 10px #0272d9;
 }
 
