@@ -69,11 +69,16 @@ body *:not(i) {
     color: white;
 }
 
-.window-app:not(.char, .item) .window-content {
+.window-app:not(.char) .window-content, .window-app.sheet.item .window-content { /* , .item */
     background: url("./ui/img/dialog-back.png");
     background-size: 100% 100% !important;
     color: white;
 }
+
+/* .window-app.sheet.item .window-content {
+    background: url("./ui/img/dialog-back.png");
+    background-size: 100% 100% !important;
+} */
 
 .window-app .window-content .notes {
     color: #6aa1d4;
@@ -147,6 +152,49 @@ body *:not(i) {
     -webkit-filter: none;
     width:60px;
     height:24px;
+}
+
+.item-stats input.item-card-title {
+    background-image: url("./ui/img/button_top.png");
+    background-color:  #01010100;
+    background-position: center !important;
+    background-size: 100% 100% !important;
+    border-radius: 0px !important;
+    color: white ;
+    font-weight: bold;
+}
+
+.item-stats input.item-card-title:focus {
+    box-shadow: 0 0 6px inset #008cff;
+}
+
+.item-stats .item-card-stats {
+    background-size: 100% 100% !important;
+    background-image: url("./ui/img/chat-message-back.png");
+}
+
+.item-stats .item-card-stats label {
+    color: white;
+}
+
+.item-stats .item-card-stats input, .item-stats .item-card-stats select {
+    background: white;
+    color: #013877;
+}
+
+.item-stats .item-card-stats input:focus, .item-stats .item-card-stats select:focus {
+    box-shadow: 0 0 6px #00c3ff;
+}
+
+.item-stats .item-card-desc {
+    background-color: #01010100 !important;
+    border: 10px solid transparent;
+    border-image-source: url("./ui/img/item-desc-back.png");
+    border-image-slice: 12 fill;
+}
+
+.item-stats .item-card-desc label {
+    color: white;
 }
 
 /* #endregion */
