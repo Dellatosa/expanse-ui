@@ -69,16 +69,11 @@ body *:not(i) {
     color: white;
 }
 
-.window-app:not(.char) .window-content, .window-app.sheet.item .window-content { /* , .item */
+.window-app:not(.char) .window-content, .window-app.sheet.item .window-content {
     background: url("./ui/img/dialog-back.png");
     background-size: 100% 100% !important;
     color: white;
 }
-
-/* .window-app.sheet.item .window-content {
-    background: url("./ui/img/dialog-back.png");
-    background-size: 100% 100% !important;
-} */
 
 .window-app .window-content .notes {
     color: #6aa1d4;
@@ -169,6 +164,7 @@ body *:not(i) {
 }
 
 .item-stats .item-card-stats {
+    margin: 2px;
     background-size: 100% 100% !important;
     background-image: url("./ui/img/chat-message-back.png");
 }
@@ -197,6 +193,9 @@ body *:not(i) {
     color: white;
 }
 
+.item-stats .item-card-desc .tox-tinymce {
+    background-color: white;
+}
 /* #endregion */
 
 
