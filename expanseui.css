@@ -150,7 +150,7 @@ body *:not(i) {
 }
 
 .item-stats input.item-card-title {
-    background-image: url("./ui/img/button_top.png");
+    background-image: url("./ui/img/title.png");
     background-color:  #01010100;
     background-position: center !important;
     background-size: 100% 100% !important;
@@ -165,8 +165,15 @@ body *:not(i) {
 
 .item-stats .item-card-stats {
     margin: 2px;
-    background-size: 100% 100% !important;
-    background-image: url("./ui/img/chat-message-back.png");
+    background-color: #0b3f57 !important;
+    border-radius: 5px;
+    /* TESTS
+     #385c6c
+     #2d6178
+
+     #3a4b6a
+     #2d4578
+     */
 }
 
 .item-stats .item-card-stats label {
@@ -176,6 +183,7 @@ body *:not(i) {
 .item-stats .item-card-stats input, .item-stats .item-card-stats select {
     background: white;
     color: #013877;
+    margin: 1px;
 }
 
 .item-stats .item-card-stats input:focus, .item-stats .item-card-stats select:focus {
@@ -196,6 +204,44 @@ body *:not(i) {
 .item-stats .item-card-desc .tox-tinymce {
     background-color: white;
 }
+
+.item-stats .tabs a {
+    margin-left: 2px;
+    margin-right: 2px;
+    margin-top: 1px;
+    margin-bottom: 3px;
+    height: 20px;
+    background-image: url("./ui/img/tab.png");
+    background-size: 100% 100% !important;
+    background-color: #01010100 !important;
+    color: rgb(192, 192, 192) !important;
+}
+
+.item-stats .tabs a.active {
+    border-top: 1px solid #008cff;
+    border-bottom: 1px solid #008cff;
+    color: white !important;
+    font-weight: bold;
+}
+
+
+.item-stats li.mod-item.header {
+    color: white;
+    /*background-color: #3a4b6a;*/
+    background-color: #2d4578;
+    border-radius: 5px !important;
+}
+
+.item-stats li.mod-item {
+    background-color: white;
+    color: #013877;
+    border-radius: 5px !important;
+}
+
+.item-stats li.mod-item input:focus {
+    box-shadow: 0 0 6px #013877;
+}
+
 /* #endregion */
 
 
