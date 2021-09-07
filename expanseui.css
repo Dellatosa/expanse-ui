@@ -63,13 +63,13 @@ body *:not(i) {
 }
 /* #endregion */
 
-/* #region Dialog */
+/* #region Dialog and Sheet */
 .window-app .window-header {
     background: #05172ace;
     color: white;
 }
 
-.window-app:not(.char) .window-content, .window-app.sheet.item .window-content {
+.window-app .window-content, .window-app.sheet.char .window-content, .window-app.sheet.item .window-content {
     background: url("./ui/img/dialog-back.png");
     background-size: 100% 100% !important;
     color: white;
@@ -149,7 +149,7 @@ body *:not(i) {
     height:24px;
 }
 
-.item-stats input.item-card-title {
+.item-stats input.item-card-title, .char-sheet .sheet-header h1.charname {
     background-image: url("./ui/img/title.png");
     background-color:  #01010100;
     background-position: center !important;
