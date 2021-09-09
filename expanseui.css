@@ -149,17 +149,22 @@ body *:not(i) {
     height:24px;
 }
 
-.item-stats input.item-card-title, .char-sheet .sheet-header h1.charname {
+.item-stats input.item-card-title, .colorset-selection .char-sheet h1 input {
     background-image: url("./ui/img/title.png");
     background-color:  #01010100;
     background-position: center !important;
     background-size: 100% 100% !important;
     border-radius: 0px !important;
-    color: white ;
+    color: white;
     font-weight: bold;
 }
 
-.item-stats input.item-card-title:focus {
+.window-app.sheet.char .window-content h1 input {
+    color: white;
+    margin: 1px;
+}
+
+.item-stats input.item-card-title:focus, .window-app.sheet.char .window-content h1 input:focus {
     box-shadow: 0 0 6px inset #008cff;
 }
 
@@ -186,7 +191,12 @@ body *:not(i) {
     margin: 1px;
 }
 
-.item-stats .item-card-stats input:focus, .item-stats .item-card-stats select:focus {
+.window-app.sheet.char .window-content input, .window-app.sheet.char .window-content textarea {
+    color: #013877;
+    margin: 1px;
+}
+
+.item-stats .item-card-stats input:focus, .item-stats .item-card-stats select:focus, .window-app.sheet.char .window-content input:focus {
     box-shadow: 0 0 6px #00c3ff;
 }
 
@@ -205,7 +215,12 @@ body *:not(i) {
     background-color: white;
 }
 
-.item-stats .tabs a {
+.char-sheet .tabs {
+    background-color: #01010100;
+}
+
+.item-stats .tabs a, .the-expanse.sheet.char.standard nav.add-sheet-tabs a.char {
+    max-width: none;
     margin-left: 2px;
     margin-right: 2px;
     margin-top: 1px;
@@ -217,17 +232,34 @@ body *:not(i) {
     color: rgb(192, 192, 192) !important;
 }
 
-.item-stats .tabs a.active {
+.item-stats .tabs a.active, .the-expanse.sheet.char.standard nav.add-sheet-tabs a.char.active {
     border-top: 1px solid #008cff;
     border-bottom: 1px solid #008cff;
     color: white !important;
     font-weight: bold;
+    border-radius: 0px;
 }
 
+.colorset-selection .colorset-first-tier {
+    /*background-color: #2d4578;*/
+    background-color: #0b3f57;
+    color: white;
+}
+
+.colorset-selection .char-sheet .age-header label, .colorset-selection .char-sheet .persona label {
+    /*background-color: #2d4578;*/
+    background-color: #0b3f57;
+    color: white;
+}
+
+.the-expanse.sheet.char.standard .col-1 .ability-box .owned-focus .item-name, .the-expanse.sheet.char.standard .item-container .item-box, .the-expanse.sheet.char.standard .item-container li.elements {
+    background-color: #2d4578;
+    color: white;
+    border-radius: 3px;
+}
 
 .item-stats li.mod-item.header {
     color: white;
-    /*background-color: #3a4b6a;*/
     background-color: #2d4578;
     border-radius: 5px !important;
 }
@@ -242,6 +274,9 @@ body *:not(i) {
     box-shadow: 0 0 6px #013877;
 }
 
+.main-value.flexcol.armor {
+    margin: 1px;
+}
 /* #endregion */
 
 
