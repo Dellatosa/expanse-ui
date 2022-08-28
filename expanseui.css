@@ -6,9 +6,10 @@
     border: 1px solid rgb(2, 114, 217);
 }
 
-body *:not(i) {
-    font-family: 'Play' !important;
-}
+/*body *:not(i) {
+    font-family: 'Signika' !important;
+}*/
+
 /* #endregion */
 
 /* #region hud */
@@ -64,12 +65,11 @@ body *:not(i) {
 /* #endregion */
 
 /* #region Dialog */
-.window-app .window-header {
-    background: #05172ace;
-    color: white;
+.window-content .talents-box {
+    color: black;
 }
 
-.window-app:not(.char) .window-content, .window-app.sheet.item .window-content {
+.window-app:not(.actor, .damage-modifier-sheet-dialog) .window-content, .window-app.sheet.item .window-content { 
     background: url("./ui/img/dialog-back.png");
     background-size: 100% 100% !important;
     color: white;
@@ -86,6 +86,11 @@ body *:not(i) {
 .window-app .window-content #module-list .package-title {
     color: white;
     height: auto;
+    font-weight: normal;
+}
+
+#world-config label, #keybindings .action .action-title {
+    font-weight: normal;
 }
 
 .filepicker .display-modes a {
@@ -127,21 +132,35 @@ body *:not(i) {
     box-shadow: inset 0 0 10px #0272d9;
 }
 
-.window-app:not(.char, .item) .window-content input[type="text"], .window-app:not(.char, .item) .window-content input[type="date"], 
-.window-app:not(.char, .item) .window-content input[type="time"], .window-app:not(.char, .item) .window-content input[type="number"],
-.window-app:not(.char, .item) .window-content textarea, .window-app:not(.char, .item) .window-content select {
+.window-app:not(.actor, .item) .window-content input[type="text"], .window-app:not(.actor, .item) .window-content input[type="date"], 
+.window-app:not(.actor, .item) .window-content input[type="time"], .window-app:not(.actor, .item) .window-content input[type="number"],
+.window-app:not(.actor, .item) .window-content textarea, .window-app:not(.actor, .item) .window-content select {
     background: white;
     box-shadow: inset 0 0 6px #0272d9;
     color: #013877;
 }
 
-.window-app:not(.char, .item) .window-content input[type=checkbox] {
+/*.window-app.sheet.actor*/.window-app:not(.actor, .item) .window-content input[type=checkbox] {
+    content: url("./ui/img/switch_off.png");
+    width:40px;
+    height:16px;
+}
+
+/*.window-app.sheet.actor*/.window-app:not(.actor, .item) .window-content input[type=checkbox]:checked {
+    content: url("./ui/img/switch_on.png");
+    filter: none;
+    -webkit-filter: none;
+    width:40px;
+    height:16px;
+}
+
+.window-app:not(.actor, .item) .window-content input[type=checkbox] {
     content: url("./ui/img/switch_off.png");
     width:60px;
     height:24px;
 }
 
-.window-app:not(.char, .item) .window-content input[type=checkbox]:checked {
+.window-app:not(.actor, .item) .window-content input[type=checkbox]:checked {
     content: url("./ui/img/switch_on.png");
     filter: none;
     -webkit-filter: none;
@@ -207,7 +226,7 @@ body *:not(i) {
     position: fixed;
     right: 5px;
     top: 5px;
-    width: 325px !important;
+    width: 302px !important;
     height: 99vh;
     overflow: hidden;
     margin: 0;
@@ -222,20 +241,18 @@ body *:not(i) {
 }
 
 #sidebar.collapsed {
-    width: 70px !important;
-    height: 620px !important;
-    padding-left: 5px;
+    width: 60px !important;
     border: 5px solid transparent;
     border-image-slice: 35 fill;
     background-position: center !important;
     background-size: 100% 100%!important;
-    background-repeat: no-repeat;
     box-sizing: border-box;
     box-shadow: -5 -5 25px inset #008cff;
 }
 
 #sidebar-tabs{
     text-align: center;
+    flex-wrap: wrap !important
 }
 
 #sidebar #sidebar-tabs > .item {
@@ -248,8 +265,8 @@ i.fa-caret-right::before{
 
 .fa-caret-right{
     background-image: url("./ui/img/right_arrow.png");
-    width: 30px;
-    height: 30px;
+    width: 45px;
+    height: 45px;
     display: inline-block !important;
     background-position:center !important;
     background-size:20px 20px !important;
@@ -264,8 +281,8 @@ i.fa-caret-left::before{
 
 .fa-caret-left{
     background-image: url("./ui/img/left_arrow.png") !important;
-    width: 30px;
-    height: 30px;
+    width: 45px;
+    height: 45px;
     display: inline-block !important;
     background-position:center !important;
     background-size:20px 20px !important;
@@ -282,10 +299,12 @@ i.fa-caret-left::before{
     margin: 0 0 5px;
     border-bottom: 1px solid #006eff;
     box-shadow: 0 0 10px #008cff;
+    --sidebar-tab-height: auto;
 }
 #sidebar-tabs > .item {
     line-height: 0px;
-    height: 55px;
+    height: 47px;
+    border-radius: 5px;
 }
 #sidebar-tabs > .item.active {
     color: #FFF;
@@ -301,8 +320,8 @@ i.fa-caret-left::before{
 #sidebar #sidebar-tabs i.fa-comments {
     content: "";
     background-image: url("./ui/img/speechbubble.png") !important;
-    width: 50px !important;
-    height: 50px !important;
+    width: 45px !important;
+    height: 45px !important;
     display: inline-block !important;
     background-position:center !important;
     background-size:cover !important;
@@ -315,8 +334,8 @@ i.fa-caret-left::before{
 #sidebar #sidebar-tabs i.fa-fist-raised {
     content: "";
     background-image: url("./ui/img/combat.png") !important;
-    width: 50px !important;
-    height: 50px !important;
+    width: 45px !important;
+    height: 45px !important;
     display: inline-block !important;
     background-position:center !important;
     background-size:cover !important;
@@ -329,8 +348,8 @@ i.fa-caret-left::before{
 #sidebar #sidebar-tabs i.fa-map {
     content: "";
     background-image: url("./ui/img/scenes.png") !important;
-    width: 50px !important;
-    height: 50px !important;
+    width: 45px !important;
+    height: 45px !important;
     display: inline-block !important;
     background-position:center !important;
     background-size:cover !important;
@@ -343,8 +362,8 @@ i.fa-caret-left::before{
 #sidebar #sidebar-tabs i.fa-users {
     content: "";
     background-image: url("./ui/img/actors.png") !important;
-    width: 50px !important;
-    height: 50px !important;
+    width: 45px !important;
+    height: 45px !important;
     display: inline-block !important;
     background-position:center !important;
     background-size:cover !important;
@@ -357,8 +376,8 @@ i.fa-caret-left::before{
 #sidebar #sidebar-tabs i.fa-suitcase {
     content: "";
     background-image: url("./ui/img/items.png") !important;
-    width: 50px !important;
-    height: 50px !important;
+    width: 45px !important;
+    height: 45px !important;
     display: inline-block !important;
     background-position:center !important;
     background-size:cover !important;
@@ -371,8 +390,8 @@ i.fa-caret-left::before{
 #sidebar #sidebar-tabs i.fa-book-open {
     content: "";
     background-image: url("./ui/img/journals.png") !important;
-    width: 50px !important;
-    height: 50px !important;
+    width: 45px !important;
+    height: 45px !important;
     display: inline-block !important;
     background-position:center !important;
     background-size:cover !important;
@@ -385,8 +404,8 @@ i.fa-caret-left::before{
 #sidebar #sidebar-tabs i.fa-th-list {
     content: "";
     background-image: url("./ui/img/tables.png") !important;
-    width: 50px !important;
-    height: 50px !important;
+    width: 45px !important;
+    height: 45px !important;
     display: inline-block !important;
     background-position:center !important;
     background-size:cover !important;
@@ -396,11 +415,25 @@ i.fa-caret-left::before{
     content: "";
 }
 
+#sidebar #sidebar-tabs i.fa-id-badge {
+    content: "";
+    background-image: url("./ui/img/cartes.png") !important;
+    width: 45px !important;
+    height: 45px !important;
+    display: inline-block !important;
+    background-position:center !important;
+    background-size:cover !important;
+}
+
+#sidebar #sidebar-tabs i.fa-id-badge::before {
+    content: "";
+}
+
 #sidebar #sidebar-tabs i.fa-music {
     content: "";
     background-image: url("./ui/img/music.png") !important;
-    width: 50px !important;
-    height: 50px !important;
+    width: 45px !important;
+    height: 45px !important;
     display: inline-block !important;
     background-position:center !important;
     background-size:cover !important;
@@ -413,8 +446,8 @@ i.fa-caret-left::before{
 #sidebar #sidebar-tabs i.fa-atlas {
     content: "";
     background-image: url("./ui/img/compendiums.png") !important;
-    width: 50px !important;
-    height: 50px !important;
+    width: 45px !important;
+    height: 45px !important;
     display: inline-block !important;
     background-position:center !important;
     background-size:cover !important;
@@ -427,8 +460,8 @@ i.fa-caret-left::before{
 #sidebar #sidebar-tabs i.fa-cogs {
     content: "";
     background-image: url("./ui/img/settings.png") !important;
-    width: 50px !important;
-    height: 50px !important;
+    width: 45px !important;
+    height: 45px !important;
     display: inline-block !important;
     background-position:center !important;
     background-size:cover !important;
@@ -698,6 +731,10 @@ textarea:focus {
     background-repeat: no-repeat;
     background-color: #01010100; 
     border : 0px;
+    color: #b7c6ec; 
+}
+
+.flavor-text {
     color: #b7c6ec; 
 }
 /* #endregion */
