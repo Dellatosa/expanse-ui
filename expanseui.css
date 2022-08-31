@@ -69,7 +69,7 @@
     color: black;
 }
 
-.window-app:not(.actor, .damage-modifier-sheet-dialog) .window-content, .window-app.sheet.item .window-content { 
+.window-app:not(.char-sheet-alt, .char) .window-content, .window-app.sheet.item .window-content { 
     background: url("./ui/img/dialog-back.png");
     background-size: 100% 100% !important;
     color: white;
@@ -132,21 +132,21 @@
     box-shadow: inset 0 0 10px #0272d9;
 }
 
-.window-app:not(.actor, .item) .window-content input[type="text"], .window-app:not(.actor, .item) .window-content input[type="date"], 
-.window-app:not(.actor, .item) .window-content input[type="time"], .window-app:not(.actor, .item) .window-content input[type="number"],
-.window-app:not(.actor, .item) .window-content textarea, .window-app:not(.actor, .item) .window-content select {
+.window-app:not(.char-sheet-alt, .char, .item) .window-content input[type="text"], .window-app:not(.char-sheet-alt, .char, .item) .window-content input[type="date"], 
+.window-app:not(.char-sheet-alt, .char, .item) .window-content input[type="time"], .window-app:not(.char-sheet-alt, .char, .item) .window-content input[type="number"],
+.window-app:not(.char-sheet-alt, .char, .item) .window-content textarea, .window-app:not(.char-sheet-alt, .char, .item) .window-content select {
     background: white;
     box-shadow: inset 0 0 6px #0272d9;
     color: #013877;
 }
 
-/*.window-app.sheet.actor*/.window-app:not(.actor, .item) .window-content input[type=checkbox] {
+.window-app:not(.char-sheet-alt, .char, .item) .window-content input[type=checkbox] {
     content: url("./ui/img/switch_off.png");
     width:40px;
     height:16px;
 }
 
-/*.window-app.sheet.actor*/.window-app:not(.actor, .item) .window-content input[type=checkbox]:checked {
+.window-app:not(.char-sheet-alt, .char, .item) .window-content input[type=checkbox]:checked {
     content: url("./ui/img/switch_on.png");
     filter: none;
     -webkit-filter: none;
@@ -154,13 +154,13 @@
     height:16px;
 }
 
-.window-app:not(.actor, .item) .window-content input[type=checkbox] {
+.window-app:not(.char-sheet-alt, .char, .item) .window-content input[type=checkbox] {
     content: url("./ui/img/switch_off.png");
     width:60px;
     height:24px;
 }
 
-.window-app:not(.actor, .item) .window-content input[type=checkbox]:checked {
+.window-app:not(.char-sheet-alt, .char, .item) .window-content input[type=checkbox]:checked {
     content: url("./ui/img/switch_on.png");
     filter: none;
     -webkit-filter: none;
@@ -188,16 +188,17 @@
 }
 
 .item-stats .item-card-stats {
-    margin: 2px;
     background-color: #0b3f57 !important;
+    /*
+    margin: 2px;
     border-radius: 5px;
-    /* TESTS
-     #385c6c
-     #2d6178
-
-     #3a4b6a
-     #2d4578
      */
+}
+
+.item-stats .item-card-stats img {
+    border: none;
+    width: 50px;
+    height: 50px;
 }
 
 .item-stats .item-card-stats label {
@@ -307,7 +308,7 @@
     position: fixed;
     right: 5px;
     top: 5px;
-    width: 302px !important;
+    width: 315px !important;
     height: 99vh;
     overflow: hidden;
     margin: 0;
@@ -563,7 +564,7 @@ i.fa-caret-left::before{
 }
 
 .message .editor-content {
-    color: #013877;
+    color: #b7c6ec;
 }
 
 .message-sender {
