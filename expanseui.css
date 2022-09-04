@@ -134,7 +134,7 @@
 
 .window-app:not(.char-sheet-alt, .char, .item) .window-content input[type="text"], .window-app:not(.char-sheet-alt, .char, .item) .window-content input[type="date"], 
 .window-app:not(.char-sheet-alt, .char, .item) .window-content input[type="time"], .window-app:not(.char-sheet-alt, .char, .item) .window-content input[type="number"],
-.window-app:not(.char-sheet-alt, .char, .item) .window-content textarea, .window-app:not(.char-sheet-alt, .char, .item) .window-content select {
+.window-app:not(.char-sheet-alt, .char, .item) .window-content input[type="search"], .window-content textarea, .window-app:not(.char-sheet-alt, .char, .item) .window-content select {
     background: white;
     box-shadow: inset 0 0 6px #0272d9;
     color: #013877;
@@ -413,7 +413,7 @@ i.fa-caret-left::before{
     content: "";
 }
 
-#sidebar #sidebar-tabs i.fa-fist-raised {
+#sidebar #sidebar-tabs i.fa-swords {
     content: "";
     background-image: url("./ui/img/combat.png") !important;
     width: 45px !important;
@@ -423,7 +423,7 @@ i.fa-caret-left::before{
     background-size:cover !important;
 }
 
-#sidebar #sidebar-tabs i.fa-fist-raised::before {
+#sidebar #sidebar-tabs i.fa-swords::before {
     content: "";
 }
 
@@ -441,7 +441,7 @@ i.fa-caret-left::before{
     content: "";
 }
 
-#sidebar #sidebar-tabs i.fa-users {
+#sidebar #sidebar-tabs i.fa-user {
     content: "";
     background-image: url("./ui/img/actors.png") !important;
     width: 45px !important;
@@ -451,7 +451,7 @@ i.fa-caret-left::before{
     background-size:cover !important;
 }
 
-#sidebar #sidebar-tabs i.fa-users::before {
+#sidebar #sidebar-tabs i.fa-user::before {
     content: "";
 }
 
@@ -497,7 +497,7 @@ i.fa-caret-left::before{
     content: "";
 }
 
-#sidebar #sidebar-tabs i.fa-id-badge {
+#sidebar #sidebar-tabs i.fa-cards {
     content: "";
     background-image: url("./ui/img/cartes.png") !important;
     width: 45px !important;
@@ -507,7 +507,7 @@ i.fa-caret-left::before{
     background-size:cover !important;
 }
 
-#sidebar #sidebar-tabs i.fa-id-badge::before {
+#sidebar #sidebar-tabs i.fa-cards::before {
     content: "";
 }
 
