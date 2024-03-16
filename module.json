@@ -15,9 +15,8 @@
     "expanseui.css"
   ],
   "compatibility": {
-    "minimum": "10.278",
-    "verified": "10.284",
-    "maximum": "10"
+    "minimum": "11.299",
+    "verified": "11.315"
   },
   "url": "https://github.com/Dellatosa/expanse-ui",
   "manifest": "https://raw.githubusercontent.com/Dellatosa/expanse-ui/main/module.json",
