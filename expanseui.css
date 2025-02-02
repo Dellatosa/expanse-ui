@@ -75,6 +75,10 @@
     color: white;
 }
 
+.window-app.journal-sheet .journal-entry-content, .window-app.journal-sheet form.editable {
+    background-color: rgb(3, 72, 98);
+}
+    
 .window-app .window-content .notes {
     color: #6aa1d4;
 }
