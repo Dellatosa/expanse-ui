@@ -1,24 +1,18 @@
 <form class="age-system base-age-roll colorset-selection {{colorScheme}}">
-    <div class="feature-controls"
-        data-stunt-die="{{ageRollSummary.dice.d3}}"
-        data-actor-id="{{actorId}}"
-        data-actor-token="{{isToken}}"
-        data-atkdmg-trade="{{atkDmgTradeOff}}"
-        {{#if focusId}} data-focus-id="{{focusId}}" {{/if}}
-        {{#if itemId}} data-item-id="{{itemId}}" {{/if}}>
+    <div class="feature-controls">
 
         <div class="flexcol roll-card regular-roll-card">
 
-            <div>
-                <div class="action-details colorset-first-tier">
+            <div class="roll-chart">
+                <div class="roll-header action-details colorset-first-tier">
                     <h3>{{flavor}}</h3>
                     {{#if flavor2}}
                     <h4>{{flavor2}}</h4>
                     {{/if}}
                 </div>
-                <div class="dice-show trait-test flexrow">
+                <div class="roll-dice dice-show trait-test flexrow">
                     {{#each ageRollSummary.dice as |diceFace|}}
-                        <img src="{{diceFace.img}}" width="70" height="70">
+                        <img src="{{diceFace.img}}" width="75" height="75">
                     {{/each}}
                 </div>
                 <div class="flexrow roll-mod total-roll">

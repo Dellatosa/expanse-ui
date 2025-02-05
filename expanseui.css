@@ -1,3 +1,6 @@
+:root {
+    scrollbar-color: auto !important;
+}
 /* #region Globale */
 ::-webkit-scrollbar-thumb {
     outline: none;
@@ -838,4 +841,8 @@ textarea:focus {
     color: #b7c6ec; 
 }
 
+.feature-controls .roll-chart .roll-dice {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
 /* #endregion */
