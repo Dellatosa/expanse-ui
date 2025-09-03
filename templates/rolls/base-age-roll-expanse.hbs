@@ -17,7 +17,9 @@
                 </div>
                 <div class="flexrow roll-mod total-roll">
                     <h3 class="line-header">{{localize "age-system.settings.totalRolled"}}{{#if rollTN}}{{#if isSuccess}} ({{localize "age-system.success"}}) {{else}} ({{localize "age-system.miss"}}) {{/if}}{{/if}}</h3>
+                    {{#each rolls as |roll|}}
                     <h3 class="line-value">{{roll.total}}</h3>
+                    {{/each}}
                 </div>
                 <div class="flexrow roll-mod{{#if ageRollSummary.stunt}} stunted{{/if}}">
                     <div class="line-header">{{localize "age-system.settings.stuntPoints"}}</div>

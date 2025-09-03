@@ -308,6 +308,122 @@
 
 
 /* #region Sidebar */
+
+#sidebar #sidebar-tabs button.fa-comments {
+    background-image: url("./ui/img/speechbubble.png") !important;
+    color: transparent;
+    width: 45px !important;
+    height: 45px !important;
+    background-size:cover !important;
+}
+
+#sidebar #sidebar-tabs button.fa-swords {
+    background-image: url("./ui/img/combat.png") !important;
+    color: transparent;
+    width: 45px !important;
+    height: 45px !important;
+    background-size:cover !important;
+}
+
+#sidebar #sidebar-tabs button.fa-map {
+    background-image: url("./ui/img/scenes.png") !important;
+    color: transparent;
+    width: 45px !important;
+    height: 45px !important;
+    background-size:cover !important;
+}
+
+#sidebar #sidebar-tabs button.fa-user {
+    background-image: url("./ui/img/actors.png") !important;
+    color: transparent;
+    width: 45px !important;
+    height: 45px !important;
+    background-size:cover !important;
+}
+
+#sidebar #sidebar-tabs button.fa-suitcase {
+    background-image: url("./ui/img/items.png") !important;
+    color: transparent;
+    width: 45px !important;
+    height: 45px !important;
+    background-size:cover !important;
+}
+
+#sidebar #sidebar-tabs button.fa-book-open {
+    background-image: url("./ui/img/journals.png") !important;
+    color: transparent;
+    width: 45px !important;
+    height: 45px !important;
+    background-size:cover !important;
+}
+
+#sidebar #sidebar-tabs button.fa-table-list {
+    background-image: url("./ui/img/tables.png") !important;
+    color: transparent;
+    width: 45px !important;
+    height: 45px !important;
+    background-size:cover !important;
+}
+
+#sidebar #sidebar-tabs button.fa-code {
+    background-image: url("./ui/img/macro.png") !important;
+    color: transparent;
+    width: 45px !important;
+    height: 45px !important;
+    background-size:cover !important;
+}
+
+#sidebar #sidebar-tabs button.fa-cards {
+    background-image: url("./ui/img/cartes.png") !important;
+    color: transparent;
+    width: 45px !important;
+    height: 45px !important;
+    background-size:cover !important;
+}
+
+#sidebar #sidebar-tabs button.fa-music {
+    background-image: url("./ui/img/music.png") !important;
+    color: transparent;
+    width: 45px !important;
+    height: 45px !important;
+    background-size:cover !important;
+}
+
+#sidebar #sidebar-tabs button.fa-book-atlas {
+    background-image: url("./ui/img/compendiums.png") !important;
+    color: transparent;
+    width: 45px !important;
+    height: 45px !important;
+    background-size:cover !important;
+}
+
+#sidebar #sidebar-tabs button.fa-gears {
+    background-image: url("./ui/img/settings.png") !important;
+    color: transparent;
+    width: 45px !important;
+    height: 45px !important;
+    background-size:cover !important;
+}
+
+#sidebar #sidebar-tabs button.fa-caret-right{
+    background-image: url("./ui/img/right_arrow.png") !important;;
+    color: transparent;
+    width: 45px;
+    height: 45px;
+    background-size:30px 30px !important;
+    background: center;
+}
+
+#sidebar #sidebar-tabs button.fa-caret-left{
+    background-image: url("./ui/img/left_arrow.png") !important;
+    color: transparent;
+    width: 45px;
+    height: 45px;
+    background-size:30px 30px !important;
+    background: center;
+}
+
+/*
 #sidebar {
     display: flex;
     flex-direction: column;
@@ -323,10 +439,6 @@
     box-sizing: border-box;
     box-shadow: -30 -30 25px outset #008cff;
     background: url("./ui/img/denim075.png") repeat;
-}
-
-.collapse::before{
-    content: "";
 }
 
 #sidebar.collapsed {
@@ -347,40 +459,6 @@
 #sidebar #sidebar-tabs > .item {
     line-height: 0px;
 }
-
-i.fa-caret-right::before{
-    content: "";
-}
-
-.fa-caret-right{
-    background-image: url("./ui/img/right_arrow.png");
-    width: 45px;
-    height: 45px;
-    display: inline-block !important;
-    background-position:center !important;
-    background-size:20px 20px !important;
-    background-repeat: no-repeat;
-    content: "";
-    text-align: center;
-}
-
-i.fa-caret-left::before{
-    content: "";
-}
-
-.fa-caret-left{
-    background-image: url("./ui/img/left_arrow.png") !important;
-    width: 45px;
-    height: 45px;
-    display: inline-block !important;
-    background-position:center !important;
-    background-size:20px 20px !important;
-    background-repeat: no-repeat;
-    content: "";
-    text-align: center;
-    vertical-align: top;
-}
-
 
 #sidebar-tabs {
     flex: 0 0 32px;
@@ -405,160 +483,7 @@ i.fa-caret-left::before{
     border-bottom: 1px solid #006eff;
     border-radius: 5px;
 }
-
-#sidebar #sidebar-tabs i.fa-comments {
-    content: "";
-    background-image: url("./ui/img/speechbubble.png") !important;
-    width: 45px !important;
-    height: 45px !important;
-    display: inline-block !important;
-    background-position:center !important;
-    background-size:cover !important;
-}
-
-#sidebar #sidebar-tabs i.fa-comments::before {
-    content: "";
-}
-
-#sidebar #sidebar-tabs i.fa-swords {
-    content: "";
-    background-image: url("./ui/img/combat.png") !important;
-    width: 45px !important;
-    height: 45px !important;
-    display: inline-block !important;
-    background-position:center !important;
-    background-size:cover !important;
-}
-
-#sidebar #sidebar-tabs i.fa-swords::before {
-    content: "";
-}
-
-#sidebar #sidebar-tabs i.fa-map {
-    content: "";
-    background-image: url("./ui/img/scenes.png") !important;
-    width: 45px !important;
-    height: 45px !important;
-    display: inline-block !important;
-    background-position:center !important;
-    background-size:cover !important;
-}
-
-#sidebar #sidebar-tabs i.fa-map::before {
-    content: "";
-}
-
-#sidebar #sidebar-tabs i.fa-user {
-    content: "";
-    background-image: url("./ui/img/actors.png") !important;
-    width: 45px !important;
-    height: 45px !important;
-    display: inline-block !important;
-    background-position:center !important;
-    background-size:cover !important;
-}
-
-#sidebar #sidebar-tabs i.fa-user::before {
-    content: "";
-}
-
-#sidebar #sidebar-tabs i.fa-suitcase {
-    content: "";
-    background-image: url("./ui/img/items.png") !important;
-    width: 45px !important;
-    height: 45px !important;
-    display: inline-block !important;
-    background-position:center !important;
-    background-size:cover !important;
-}
-
-#sidebar #sidebar-tabs i.fa-suitcase::before {
-    content: "";
-}
-
-#sidebar #sidebar-tabs i.fa-book-open {
-    content: "";
-    background-image: url("./ui/img/journals.png") !important;
-    width: 45px !important;
-    height: 45px !important;
-    display: inline-block !important;
-    background-position:center !important;
-    background-size:cover !important;
-}
-
-#sidebar #sidebar-tabs i.fa-book-open::before {
-    content: "";
-}
-
-#sidebar #sidebar-tabs i.fa-th-list {
-    content: "";
-    background-image: url("./ui/img/tables.png") !important;
-    width: 45px !important;
-    height: 45px !important;
-    display: inline-block !important;
-    background-position:center !important;
-    background-size:cover !important;
-}
-
-#sidebar #sidebar-tabs i.fa-th-list::before {
-    content: "";
-}
-
-#sidebar #sidebar-tabs i.fa-cards {
-    content: "";
-    background-image: url("./ui/img/cartes.png") !important;
-    width: 45px !important;
-    height: 45px !important;
-    display: inline-block !important;
-    background-position:center !important;
-    background-size:cover !important;
-}
-
-#sidebar #sidebar-tabs i.fa-cards::before {
-    content: "";
-}
-
-#sidebar #sidebar-tabs i.fa-music {
-    content: "";
-    background-image: url("./ui/img/music.png") !important;
-    width: 45px !important;
-    height: 45px !important;
-    display: inline-block !important;
-    background-position:center !important;
-    background-size:cover !important;
-}
-
-#sidebar #sidebar-tabs i.fa-music::before {
-    content: "";
-}
-
-#sidebar #sidebar-tabs i.fa-atlas {
-    content: "";
-    background-image: url("./ui/img/compendiums.png") !important;
-    width: 45px !important;
-    height: 45px !important;
-    display: inline-block !important;
-    background-position:center !important;
-    background-size:cover !important;
-}
-
-#sidebar #sidebar-tabs i.fa-atlas::before {
-    content: "";
-}
-
-#sidebar #sidebar-tabs i.fa-cogs {
-    content: "";
-    background-image: url("./ui/img/settings.png") !important;
-    width: 45px !important;
-    height: 45px !important;
-    display: inline-block !important;
-    background-position:center !important;
-    background-size:cover !important;
-}
-
-#sidebar #sidebar-tabs i.fa-cogs::before {
-    content: "";
-}
+    */
 /* #endregion */
 
 
@@ -582,7 +507,7 @@ i.fa-caret-left::before{
     padding-left: 5px;
 }
 
-#chat-message{
+#chat-message {
     color: white;
     background-size: 100% 100% !important;
     padding-left: 5px;
@@ -660,7 +585,8 @@ textarea:focus {
 /* #endregion*/
 
 /* #region Sidebar Folder and widgets*/
-.sidebar-tab .directory-header .header-search input {
+
+.sidebar-tab .directory-header search input {
     font-weight: 500;
     font-size: 14px;
     text-align: left;
@@ -679,6 +605,7 @@ textarea:focus {
     color: #013877;
 
 }
+
 .header-search{
     padding-bottom: 8px;
 }
@@ -686,7 +613,7 @@ textarea:focus {
     color: white;
 }
 
-.sidebar-tab .directory-header button, #settings button {
+.sidebar-tab .directory-header button, #settings button, #settings a.button {
     background-image: url("./ui/img/button_top.png");
     text-align: center;
     background-position: center !important;
@@ -750,18 +677,11 @@ textarea:focus {
 /* #endregion */
 
 /* #region Compendium headers */
-#compendium h3, #settings h2 {
-    text-align: left;
-    position: relative;
+#settings h4 {
     height: 55px;
-    top: 7px;
-    padding-top: 17px;
-    padding-left: 35px;
     background: url("./ui/img/button_compedium.png") no-repeat;
     background-position-x: 0%;
     background-size: 100% 100%;
-    background-position-y: 0%;
-    background-position: initial;
     border: 0px solid;
     color: #eeede0;
     text-shadow: 2px 2px 4px #000000;
@@ -835,6 +755,38 @@ textarea:focus {
     background-color: #01010100; 
     border : 0px;
     color: #b7c6ec; 
+    padding: 10px 0;
+    
+    h3, h4 {
+        margin: 0;
+        text-align: center;
+        color: #b7c6ec;
+    }
+
+    h3 {
+        font-size: 1.25em;
+    }
+
+    h4 {
+        font-size: 1em;
+        text-transform: lowercase;
+        font-variant: small-caps;
+    }
+}
+
+.roll-mod.total-roll {
+    padding: 5px 0;
+
+    h3 {
+        font-size: 1.25em;
+        margin: 0;
+        color: white;
+        margin: 2px;
+    }
+}
+
+.roll-mod .line-value {
+    text-align: right;
 }
 
 .flavor-text {
